@@ -13,7 +13,7 @@ The project includes unit and integration tests to ensure reliability and correc
 
 # Getting Started
 
-- Clone this repository: git clone `https://github.com/facundomoreno1605/cliengo-challenge.git`
-- Install dependencies, run: npm install`
+- Clone this repository: `git clone https://github.com/facundomoreno1605/cliengo-challenge.git`
+- Install dependencie, run: `npm install`
 - Start the API: `npm start`
 - To run tests: `npm test`
