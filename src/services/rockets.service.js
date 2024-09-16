@@ -5,8 +5,10 @@ const getAllRockets = () => {
 };
 
 const getRocketsLaunches = async () => {
-  const rockets = await spaceXProvider.getRocketsData();
-  const launches = await spaceXProvider.getLaunchesData();
+  const [rockets, launches] = await Promise.all([
+    spaceXProvider.getRocketsData(),
+    spaceXProvider.getLaunchesData()
+  ]);
 
   const rocketsLookup = rockets.reduce((acc, rocket) => {
     acc[rocket.rocket_id] = rocket;
